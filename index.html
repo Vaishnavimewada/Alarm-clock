@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alarm clock</title>
+  <link rel="stylesheet"href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+<body>
+    <div class="tabs">
+
+      <!-- ----------------first tab---------- -->
+      <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+      <label for="tab1" class="tabs__label"><i class="fa-sharp fa-solid fa-clock"></i></label>
+      <div class="tabs__content">
+        <div class="container">
+          <div class="clock">
+              <label style="--i: 1"><span>.</span></label>
+              <label style="--i: 2"><span>.</span></label>
+              <label style="--i: 3"><span>3</span></label>
+              <label style="--i: 4"><span>.</span></label>
+              <label style="--i: 5"><span>.</span></label>
+              <label style="--i: 6"><span>6</span></label>
+              <label style="--i: 7"><span>.</span></label>
+              <label style="--i: 8"><span>.</span></label>
+              <label style="--i: 9"><span>9</span></label>
+              <label style="--i: 10"><span>.</span></label>
+              <label style="--i: 11"><span>.</span></label>
+              <label style="--i: 12"><span>12</span></label>
+  
+  
+              <div class="indicator">
+                  <span class="hand hour"></span>
+                  <span class="hand minute"></span>  
+                   <span class="hand second"></span>
+              </div>
+
+               
+            </div>
+
+           <div class="digital">
+              <div id="digital">
+              </div>
+            </div> 
+
+            <div class="date">
+              <p>current :</p>
+              <div id="date">
+
+              </div>
+            </div>
+       </div>
+  
+  
+    
+      </div>
+
+      <!-- --------------second tab----------- -->
+      <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+      <label for="tab2" class="tabs__label"><i class="fa-solid fa-bell"></i></label>
+      
+      <div class="tabs__content">
+      
+        <div class="container">
+          
+           <div id="displaytimer">
+
+          </div> 
+          <div class="inputs">
+          <div class="set">
+             <p>Hour</p>
+            <input type="number" id="hourInput"placeholder="00" min="0" max="23" />
+          </div>
+          <div class="set">
+            <p>Minute</p>
+            <input type="number" id="minuteInput"placeholder="00" min="0" max="59" />
+          </div>
+         
+        </div>
+        <button id="set"><i class="fa-solid fa-plus"></i></button>
+        <div class="activeAlarms"></div>
+      
+      </div>
+      </div>
+
+      <!-- -----------------third tab----------- -->
+      <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+      <label for="tab3" class="tabs__label"><i class="fa-sharp fa-solid fa-stopwatch"></i></label>
+      <div class="tabs__content">
+        <div class="stopwatch">00 : 00 : 00</div>
+
+        <div class="buttons">
+          <button id="stopbtn" class="btn"><i class="fa-solid fa-pause"></i></button>
+          <button id="startbtn" class="btn"><i class="fa-solid fa-play"></i></button>
+          <button id="resetbtn" class="btn"><i class="fa-sharp fa-solid fa-rotate-left"></i></button>
+        </div>
+      </div>
+      <div class="mode-switch">
+        <!-- <i class="fa-sharp fa-solid fa-moon" id="toggledark"></i> -->
+           <i id="mode-switch" class="fa-sharp fa-solid fa-moon"></i>  
+         
+    </div> 
+</div>
+
+<script src="script.js">
+
+</script>
+</body>
+</html>
